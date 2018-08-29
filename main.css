@@ -1,0 +1,90 @@
+html /* det som står här bestämmer utseende för hela sidan*/
+{
+background-color: #004F5E;
+
+}
+
+body /* det som står här bestämmer utseendet för alla objekt inom body-taggen*/
+{
+  display: flex;          /*bestämmer att allt inom body ska formateras enligt flexbox (finns att läsa om flexbox på css-tricks)*/
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 150px;
+}
+
+h1 /* formatering för h1*/
+{
+  color: #5DFFC0;
+  font-family: sans-serif;
+  font-weight: lighter;
+  font-size: 30px;
+  letter-spacing: 3px;
+  margin-bottom: 0px;
+}
+
+h2 /* formatering för h2*/
+{
+  color: #5DFFC0;
+  font-family: sans-serif;
+  font-weight: lighter;
+  font-size: 20px;
+  letter-spacing: 2px;
+  margin-bottom: 0px;
+}
+
+.inputSection /* bestämmer formateringen för objekten som benämns i class="inputsection"*/
+{
+  margin: 50px 0px 80px 0px;
+  width: 400px;
+}
+
+.inputField
+{
+  width: inherit; /*bestämmer att inputField ska ärva egenskaper från inputSection, eftersom section är "containern" och field är "item" */
+  display: flex;
+  flex-direction: column;
+  background-color: none;
+}
+
+input
+{
+  margin-top: 10px;
+  background-color: #C9B6B5;
+  border: none;
+  font-size: 16px;
+  padding: 15px 32px;
+  text-align: left;
+  text-decoration: none;
+  display: inline-block;
+  outline: none;
+
+  -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+input:hover
+{
+  background-color: #C9B6B5;
+  color: white;
+}
+
+.button
+{
+  margin-top: 10px;
+  background-color: #CC6A93;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+
+  -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+.button:hover
+{
+  background-color: #C9B6B5;
+  color: white;
+}
